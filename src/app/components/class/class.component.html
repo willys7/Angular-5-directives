@@ -4,3 +4,7 @@
 
 <button type="button" class="btn btn-info" (click)="alert = 'alert-info'">Info</button>
 <button type="button" class="btn btn-success" (click)="alert = 'alert-success'">Success</button>
+<br><br>
+<h3 [ngClass]="{ 'text-danger': prop.danger, 'text-info':!prop.danger }">Hola mundo</h3>
+
+<button class="btn btn-danger" type="button" (click)="prop.danger = !prop.danger ">Cambiar</button>

@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class ClassComponent implements OnInit {
-  alert:string = "alert-danger"
+  alert:string = "alert-danger";
+
+  prop:Object = {
+    danger:false
+  }
   constructor() { }
 
   ngOnInit() {
