@@ -7,4 +7,4 @@
 <br><br>
 <h3 [ngClass]="{ 'text-danger': prop.danger, 'text-info':!prop.danger }">Hola mundo</h3>
 
-<button class="btn btn-danger" type="button" (click)="prop.danger = !prop.danger ">Cambiar</button>
+<button class="btn" [ngClass]="{'btn-danger':prop.danger, 'btn-info':!prop.danger}" type="button" (click)="prop.danger = !prop.danger ">Cambiar</button>
