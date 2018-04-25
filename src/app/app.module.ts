@@ -8,7 +8,15 @@ import { CssComponent } from './components/css/css.component';
 import { ClassComponent } from './components/class/class.component';
 import { ResaltadoDirective } from './directives/resaltado.directive';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { HomeComponent } from './components/home/home.component';
 
+
+import {APP_ROUTING} from './app.routes';
+import { UserComponent } from './components/user/user.component';
+import { UserNewComponent } from './components/user/user-new.component';
+import { UserEditComponent } from './components/user/user-edit.component';
+import { UserDetailsComponent } from './components/user/user-details.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +25,17 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
     CssComponent,
     ClassComponent,
     ResaltadoDirective,
-    NgSwitchComponent
+    NgSwitchComponent,
+    HomeComponent,
+    UserComponent,
+    UserNewComponent,
+    UserEditComponent,
+    UserDetailsComponent,
+    NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
